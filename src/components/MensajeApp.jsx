@@ -1,9 +1,25 @@
 import React from "react";
 
-const MensajeApp = (props) => {
-  console.log(props.message);
+const MensajeApp = ({ message }) => {
+  // console.log(props);
 
-  return <h3>{props.message}</h3>;
+  //desestructuracíon de objetos
+  // const { message } = props;
+
+  //desestructuracíon de arreglos
+  // const dias = ["Lunes", "Martes", "Miércoles"];
+  // dias[0]; //Lunes
+
+  // const [posicion1, posicion2, cualquiera] = dias;
+  // console.log(posicion1);
+  // console.log(posicion2);
+  // console.log(cualquiera);
+
+  // const state=['Hola',()=>alert('Hola mundo')]
+
+  // const [stateInitial, setStateInicial]=state
+
+  return <h3>{message}</h3>;
 };
 
 export default MensajeApp;

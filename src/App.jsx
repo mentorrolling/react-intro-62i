@@ -2,6 +2,7 @@ import movies from "./data/movies.json";
 import ListaApp from "./components/ListaApp";
 import MensajeApp from "./components/MensajeApp";
 import "./css/index.css";
+import CardApp from "./components/CardApp";
 
 const App = () => {
   //javascript
@@ -19,7 +20,12 @@ const App = () => {
         repudiandae, ad nemo. Rem reiciendis natus voluptates soluta impedit,
         beatae magnam placeat.
       </p>
-      <ListaApp data={movies} />
+      {/* <ListaApp data={movies} /> */}
+      <div className="container">
+        {movies.map((movie) => (
+          <CardApp key={movie.id} movie={movie} />
+        ))}
+      </div>
     </>
   );
 };

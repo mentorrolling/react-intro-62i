@@ -5,13 +5,13 @@ const ListaApp = ({ data }) => {
   //  props:{
   //     data:[{}]
   //  }
-  const persona = {
-    nombre: "José",
-    edad: 45,
-  };
+  // const persona = {
+  //   nombre: "José",
+  //   edad: 45,
+  // };
 
-  const { nombre, edad } = persona;
-  console.log(nombre);
+  // const { nombre, edad } = persona;
+  // console.log(nombre);
   //desestructuración de objetos
   //   const { data } = props;
   console.log(data);
