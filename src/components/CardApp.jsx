@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardApp = ({ movie }) => {
+const CardApp = ({ movie, funcion }) => {
   const { title, image, description } = movie;
 
   const mostrarDescripcion = () => {
@@ -10,7 +10,7 @@ const CardApp = ({ movie }) => {
   return (
     <div className="card">
       <h3>{title}</h3>
-      <div onClick={mostrarDescripcion}>
+      <div onClick={funcion}>
         <img src={image} alt={title} />
       </div>
     </div>
